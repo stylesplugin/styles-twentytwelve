@@ -1,92 +1,91 @@
 {
-	"Container"                          : [
+	"Container": [
 		{
 			"selector": "#page",
 			"type"    : "text",
-			"label"   : "Text"
+			"label"   : "Container"
 		},
 		{
 			"selector": "#page",
 			"type"    : "color",
-			"label"   : "Color"
+			"label"   : "Container"
 		},
 		{
 			"selector": "#page",
 			"type"    : "background-color",
-			"label"   : "Background color"
+			"label"   : "Container"
 		},
-		{
-			"selector": "#page",
-			"type"    : "color",
-			"label"   : "Border color",
-			"template": "%s { border-color: %s; }"
-		},
+		/* Link */
 		{
 			"selector": "#page a",
 			"type"    : "text",
-			"label"   : "Link text"
+			"label"   : "Link"
 		},
 		{
 			"selector": "#page a",
 			"type"    : "color",
-			"label"   : "Link color"
+			"label"   : "Link"
 		},
 		{
 			"selector": "#page a:hover",
 			"type"    : "color",
-			"label"   : "Link hover color"
+			"label"   : "Link"
 		},
 		{}
 	],
-	"Header"                             : [
-		/*     selector: CSS selector of the element to be edited.
-		 All selectors are prepended with ".styles " to increase specificity. */
-		/*     type:     Type of user interface to display and CSS to output. Can be: color, background-color, text */
-		/*     label:    Name of this element to display in the user interface. First word only should be capitalized */
+	"Header": [
+		/* Background */
 		{
 			"selector": "#page #masthead",
 			"type"    : "background-color",
-			"label"   : "Background color"
+			"label"   : "Header"
 		},
+		/* Title */
 		{
 			"selector": "#page .site-title",
 			"type"    : "text",
 			"label"   : "Title"
 		},
 		{
-			"selector": "#page .site-title",
+			"selector": "#page .site-title a",
 			"type"    : "color",
-			"label"   : "Title color",
-			"template": "%s { color: %s !important; }"
+			"label"   : "Title",
+			"template": "$selector { color: $value !important; }"
 		},
 		{
-			"selector": "#page #masthead a:hover .site-title",
+			"selector": "#page .site-title a:hover",
 			"type"    : "color",
-			"label"   : "Title link hover color",
-			"template": "%s { color: %s !important; }"
+			"label"   : "Title",
+			"template": "$selector { color: $value !important; }"
 		},
+		/* Description */
 		{
 			"selector": ".site-description",
 			"type"    : "text",
-			"label"   : "Tagline"
+			"label"   : "Description"
 		},
 		{
 			"selector": ".site-description",
 			"type"    : "color",
-			"label"   : "Tagline color",
-			"template": "%s { color: %s !important; }"
+			"label"   : "Description",
+			"template": "$selector { color: $value !important; }"
 		},
-		/* Each array of objects must end in WITHOUT a comma after the last item. This empty object is here to make duplicating lines more convenient. */
 		{}
 	],
-	/* Create multiple Menu sections based on available menus in the theme. Give appropriate names based on template positions. */
-	"Menu: Primary"                      : [
+	"Menu – Primary": [
+		/* Background */
 		{
-			"selector": ".navbar",
+			"selector": ".nav-menu",
 			"type"    : "background-color",
-			"label"   : "Background color"
+			"label"   : "Area"
 		},
-		/* Top menu items */
+		/* Border */
+		{
+			"selector": ".main-navigation ul.nav-menu, .main-navigation div.nav-menu > ul",
+			"type"    : "border-color",
+			"label"   : "Area"
+		},
+		/* Top items */
 		{
 			"selector": "#page .main-navigation li a",
 			"type"    : "text",
@@ -95,30 +94,24 @@
 		{
 			"selector": "#page .main-navigation li a",
 			"type"    : "color",
-			"label"   : "Top item color"
+			"label"   : "Top item"
 		},
 		{
 			"selector": "#page .main-navigation li a:hover",
 			"type"    : "color",
-			"label"   : "Top item hover color"
+			"label"   : "Top item"
 		},
 		{
 			"selector": ".main-navigation li a",
 			"type"    : "background-color",
-			"label"   : "Top item background color"
+			"label"   : "Top item"
 		},
 		{
 			"selector": ".main-navigation li > a:hover",
 			"type"    : "background-color",
-			"label"   : "Top item hover background color"
+			"label"   : "Top item"
 		},
-		/* Sub menu items */
-		{
-			"selector": ".nav-menu .sub-menu, .nav-menu .children",
-			"type"    : "color",
-			"label"   : "Submenu border color",
-			"template": "%s { border-color: %s; }"
-		},
+		/* Sub items */
 		{
 			"selector": "#page .main-navigation ul ul a",
 			"type"    : "text",
@@ -127,133 +120,121 @@
 		{
 			"selector": "#page .main-navigation li li a",
 			"type"    : "color",
-			"label"   : "Submenu item color"
+			"label"   : "Submenu item"
 		},
 		{
 			"selector": "#page .main-navigation li li a:hover",
 			"type"    : "color",
-			"label"   : "Submenu item hover color"
+			"label"   : "Submenu item"
 		},
 		{
 			"selector": ".main-navigation li li a",
 			"type"    : "background-color",
-			"label"   : "Submenu item background color"
+			"label"   : "Submenu item"
 		},
 		{
 			"selector": ".main-navigation li li a:hover",
 			"type"    : "background-color",
-			"label"   : "Submenu item hover background color"
+			"label"   : "Submenu item"
+		},
+		/* Sub item border -- Specific to the this theme */
+		{
+			"selector": ".main-navigation li ul li a",
+			"type"    : "border-bottom-color",
+			"label"   : "Submenu item"
 		},
 		{}
 	],
 	"Search Form": [
-		/* Applies to header, sidebar, search page */
+		/*  Input */
 		{
-			"selector": ".searchform [type=search]",
+			"selector": "#s",
 			"type"    : "text",
-			"label"   : "Search form"
+			"label"   : "Form"
 		},
 		{
-			"selector": ".searchform [type=search]",
+			"selector": "#s",
 			"type"    : "color",
-			"label"   : "Search form color"
+			"label"   : "Form"
 		},
 		{
-			"selector": ".widget-area .searchform [type=search]",
+			"selector": "#s",
 			"type"    : "background-color",
-			"label"   : "Search form background color"
+			"label"   : "Form"
 		},
+		/* Focus */
 		{
-			"selector": ".searchform [type=search]:focus",
+			"selector": "#s:focus",
 			"type"    : "background-color",
-			"label"   : "Search form focused background color"
+			"label"   : "Form"
+		},
+		/* Border */
+		{
+			"selector": "#s",
+			"type"    : "border-color",
+			"label"   : "Form"
+		},
+		/* Submit */
+		{
+			"selector": "#searchsubmit",
+			"type"    : "text",
+			"label"   : "Submit"
 		},
 		{
-			"selector": ".searchform [type=search], .site-header .searchform [type=search]:focus",
+			"selector": "#searchsubmit",
 			"type"    : "color",
-			"label"   : "Search form border color",
-			"template": "%s { border-color: %s; }"
+			"label"   : "Submit"
+		},
+		{
+			"selector": "#searchsubmit",
+			"type"    : "background-color",
+			"label"   : "Submit",
+			"template": "$selector { background-color: $value; background-image: none; }"
+		},
+		{
+			"selector": "#searchsubmit",
+			"type"    : "border-color",
+			"label"   : "Form"
 		},
 		{}
 	],
-	/* Create multiple sidebar sections if appropriate for the theme */
-	"Sidebar: Main Widget Area"                            : [
-		{
-			"selector": ".site-footer .sidebar-container",
-			"type"    : "background-color",
-			"label"   : "Sidebar background color"
-		},
+	"Widgets – Sidebar": [
+		/* Widget Title */
 		{
 			"selector": "#secondary .widget-title",
 			"type"    : "text",
-			"label"   : "Widget title"
+			"label"   : "Title"
 		},
 		{
 			"selector": "#secondary .widget-title",
 			"type"    : "color",
-			"label"   : "Widget title color"
+			"label"   : "Title"
 		},
+		/* Widget Content */
 		{
 			"selector": "#secondary aside, #secondary aside ul li, #secondary aside a",
 			"type"    : "text",
-			"label"   : "Widget content"
+			"label"   : "Content"
 		},
 		{
 			"selector": "#secondary aside, #secondary aside ul li",
 			"type"    : "color",
-			"label"   : "Widget content color"
+			"label"   : "Content"
 		},
+		/* Widget Link */
 		{
 			"selector": "#secondary aside a",
 			"type"    : "color",
-			"label"   : "Widget link color"
+			"label"   : "Link"
 		},
 		{
 			"selector": "#secondary aside a:hover",
 			"type"    : "color",
-			"label"   : "Widget link hover color"
+			"label"   : "Link"
 		},
 		{}
 	],
-	"Sidebar: Secondary Widget Area": [
-		{
-			"selector": "#tertiary .widget",
-			"type"    : "background-color",
-			"label"   : "Widget background color"
-		},
-		{
-			"selector": "#tertiary .widget-title",
-			"type"    : "text",
-			"label"   : "Widget title"
-		},
-		{
-			"selector": "#tertiary .widget-title",
-			"type"    : "color",
-			"label"   : "Widget title color"
-		},
-		{
-			"selector": "#tertiary aside",
-			"type"    : "text",
-			"label"   : "Widget content"
-		},
-		{
-			"selector": "#tertiary aside",
-			"type"    : "color",
-			"label"   : "Widget content color"
-		},
-		{
-			"selector": "#tertiary aside a",
-			"type"    : "color",
-			"label"   : "Widget link color"
-		},
-		{
-			"selector": "#tertiary aside a:hover",
-			"type"    : "color",
-			"label"   : "Widget link hover color"
-		},
-		{}
-	],
-	"Entry Content"                      : [
+	"Entry Content": [
 		/* Title */
 		{
 			"selector": ".entry-title, #page .entry-title a",
