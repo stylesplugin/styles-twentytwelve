@@ -234,7 +234,7 @@
 		},
 		{}
 	],
-	"Entry Content": [
+	"Entry – Headings": [
 		/* Title */
 		{
 			"selector": ".entry-title, #page .entry-title a",
@@ -244,28 +244,12 @@
 		{
 			"selector": ".entry-title, #page .entry-title a",
 			"type"    : "color",
-			"label"   : "Title color"
+			"label"   : "Title"
 		},
 		{
 			"selector": "#page .entry-title a:hover",
 			"type"    : "color",
-			"label"   : "Title link hover color"
-		},
-		/* Archive Title */
-		{
-			"selector": ".archive-header",
-			"type"    : "background-color",
-			"label"   : "Archive Title background color"
-		},
-		{
-			"selector": ".archive-title",
-			"type"    : "text",
-			"label"   : "Archive Title"
-		},
-		{
-			"selector": ".archive-title",
-			"type"    : "color",
-			"label"   : "Archive Title color"
+			"label"   : "Title link"
 		},
 		/* Headers */
 		{
@@ -276,7 +260,7 @@
 		{
 			"selector": ".entry-content h1",
 			"type"    : "color",
-			"label"   : "Heading 1 color"
+			"label"   : "Heading 1"
 		},
 		{
 			"selector": ".entry-content h2",
@@ -286,7 +270,7 @@
 		{
 			"selector": ".entry-content h2",
 			"type"    : "color",
-			"label"   : "Heading 2 color"
+			"label"   : "Heading 2"
 		},
 		{
 			"selector": ".entry-content h3",
@@ -296,7 +280,7 @@
 		{
 			"selector": ".entry-content h3",
 			"type"    : "color",
-			"label"   : "Heading 3 color"
+			"label"   : "Heading 3"
 		},
 		{
 			"selector": ".entry-content h4",
@@ -306,7 +290,7 @@
 		{
 			"selector": ".entry-content h4",
 			"type"    : "color",
-			"label"   : "Heading 4 color"
+			"label"   : "Heading 4"
 		},
 		{
 			"selector": ".entry-content h5",
@@ -316,7 +300,7 @@
 		{
 			"selector": ".entry-content h5",
 			"type"    : "color",
-			"label"   : "Heading 5 color"
+			"label"   : "Heading 5"
 		},
 		{
 			"selector": ".entry-content h6",
@@ -326,8 +310,43 @@
 		{
 			"selector": ".entry-content h6",
 			"type"    : "color",
-			"label"   : "Heading 6 color"
+			"label"   : "Heading 6"
 		},
+		/* Archive Title */
+		{
+			"selector": ".archive-header",
+			"type"    : "background-color",
+			"label"   : "Archive title"
+		},
+		{
+			"selector": ".archive-title",
+			"type"    : "text",
+			"label"   : "Archive title"
+		},
+		{
+			"selector": ".archive-title",
+			"type"    : "color",
+			"label"   : "Archive title"
+		},
+		/* Featured Post Title */
+		{
+			"selector": "article.sticky .featured-post",
+			"type"    : "border-color",
+			"label"   : "Featured Post title"
+		},
+		{
+			"selector": "article.sticky .featured-post",
+			"type"    : "text",
+			"label"   : "Featured Post title"
+		},
+		{
+			"selector": "article.sticky .featured-post",
+			"type"    : "color",
+			"label"   : "Featured Post title"
+		},
+		{}
+	],
+	"Entry – Content": [
 		/* Paragraph */
 		{
 			"selector": ".entry-content p, #page .entry-content p a, #respond p",
@@ -337,18 +356,18 @@
 		{
 			"selector": ".entry-content p, #respond p",
 			"type"    : "color",
-			"label"   : "Paragraph color"
+			"label"   : "Paragraph"
 		},
 		/* Links set for content and comments. Comment selection should override */
 		{
 			"selector": "#page .entry-content a, #commentform a",
 			"type"    : "color",
-			"label"   : "Link color"
+			"label"   : "Link"
 		},
 		{
 			"selector": "#page .entry-content a:hover, #commentform a:hover",
 			"type"    : "color",
-			"label"   : "Link hover color"
+			"label"   : "Linkr"
 		},
 		{
 			"selector": ".entry-content pre",
@@ -358,12 +377,12 @@
 		{
 			"selector": ".entry-content pre",
 			"type"    : "color",
-			"label"   : "Preformatted color"
+			"label"   : "Preformatted"
 		},
 		{
 			"selector": ".entry-content pre",
 			"type"    : "background-color",
-			"label"   : "Preformatted background color"
+			"label"   : "Preformatted"
 		},
 		{
 			"selector": ".entry-content blockquote, .entry-content blockquote p",
