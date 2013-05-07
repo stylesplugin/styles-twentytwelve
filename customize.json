@@ -175,7 +175,7 @@
 		{ "selector": "#page .edit-link a:hover", "type": "color", "label": "Edit link" },
 		{}
 	],
-	"Comment – Content": [
+	"Comments – Content": [
 		{ "selector": "#comments .comment", "type": "background-color", "label": "Area" },
 		/* Comment content    - This may need to change to effect comment meta as well */
 		{ "selector": ".comment-content, .comment-content p, #page .comment-content a", "type": "text", "label": "Content" },
