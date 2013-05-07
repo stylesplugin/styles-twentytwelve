@@ -1,8 +1,8 @@
 {
 	"Global": [
 		/* Global */
-		{ "selector": "html, body", "type": "background-color", "label": "Outer" },
-		{ "selector": "#page", "type": "background-color", "label": "Inner" },
+		{ "selector": "html, body", "type": "background-color", "label": "Outer Area" },
+		{ "selector": "#page", "type": "background-color", "label": "Inner Area" },
 		{ "selector": "#page", "type": "text", "label": "Default" },
 		{ "selector": "#page", "type": "color", "label": "Default" },
 		/* Link */
