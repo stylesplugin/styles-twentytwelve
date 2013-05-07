@@ -1,13 +1,14 @@
 {
-	"Container": [
-		/* Container */
-		{ "selector": "#page", "type": "text", "label": "Container" },
-		{ "selector": "#page", "type": "color", "label": "Container" },
-		{ "selector": "#page", "type": "background-color", "label": "Container" },
+	"Global": [
+		/* Global */
+		{ "selector": "html, body", "type": "background-color", "label": "Outer" },
+		{ "selector": "#page", "type": "background-color", "label": "Inner" },
+		{ "selector": "#page", "type": "text", "label": "Default" },
+		{ "selector": "#page", "type": "color", "label": "Default" },
 		/* Link */
-		{ "selector": "#page a", "type": "text", "label": "Link" },
-		{ "selector": "#page a", "type": "color", "label": "Link" },
-		{ "selector": "#page a:hover", "type": "color", "label": "Link" },
+		{ "selector": "#page a", "type": "text", "label": "Default Link" },
+		{ "selector": "#page a", "type": "color", "label": "Default Link" },
+		{ "selector": "#page a:hover", "type": "color", "label": "Default Link" },
 		{}
 	],
 	"Header": [
