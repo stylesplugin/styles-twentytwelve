@@ -1,7 +1,6 @@
 {
 	"Global": [
 		/* Global */
-		{ "selector": "html, body", "type": "background-color", "label": "Outer area" },
 		{ "selector": "#page", "type": "background-color", "label": "Inner area" },
 		{ "selector": "#page", "type": "text", "label": "Default" },
 		{ "selector": "#page", "type": "color", "label": "Default" },
@@ -70,6 +69,18 @@
 		/* Widget Link */
 		{ "selector": "#secondary aside a", "type": "color", "label": "Link" },
 		{ "selector": "#secondary aside a:hover", "type": "color", "label": "Link" },
+		{}
+	],
+	"Widgets – Front Page": [
+		/* Widget Title */
+		{ "selector": ".template-front-page #secondary .widget-title", "type": "text", "label": "Title" },
+		{ "selector": ".template-front-page #secondary .widget-title", "type": "color", "label": "Title" },
+		/* Widget Content */
+		{ "selector": ".template-front-page #secondary aside, .template-front-page #secondary aside ul li, .template-front-page #secondary aside a", "type": "text", "label": "Content" },
+		{ "selector": ".template-front-page #secondary aside, .template-front-page #secondary aside ul li", "type": "color", "label": "Content" },
+		/* Widget Link */
+		{ "selector": ".template-front-page #secondary aside a", "type": "color", "label": "Link" },
+		{ "selector": ".template-front-page #secondary aside a:hover", "type": "color", "label": "Link" },
 		{}
 	],
 	"Entry – Headings": [
