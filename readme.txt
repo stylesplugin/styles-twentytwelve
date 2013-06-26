@@ -5,7 +5,7 @@ Author URI: http://brainstormmedia.com
 Tags: css, stylesheet, appearance, customize, customizer, colors, color picker, background, fonts, google fonts, user interface, 2012, twenty twelve
 Requires at least: 3.4
 Tested up to: 3.5.2
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 
 Be creative with colors and fonts. Styles changes everything.
 
@@ -91,8 +91,17 @@ No! Styles is very careful about only loading what is needed to get its job done
 
 == Changelog ==
 
+= 1.0.2 =
+* Add: Notice if users don't have Styles 1.0.7 or higher installed.
+* Add: Guide new users to install Styles if this add-on is installed, but Styles is not.
+
 = 1.0.1 =
 * Fix: Change "Description" to "Tagline" to match WordPress naming convention.
 
 = 1.0 =
 * Initial public release.
+
+== Upgrade Notice ==
+
+* Add: Notice if users don't have Styles 1.0.7 or higher installed.
+* Add: Guide new users to install Styles if this add-on is installed, but Styles is not.
